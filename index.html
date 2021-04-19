@@ -1,6 +1,155 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <style>
+            /*changes title styling*/
+
+            * {
+                color:black;
+            }
+
+
+            @media only screen and (max-width:750px) {
+                #Heading{
+                    background-color: lightblue;
+                }
+                
+            }
+
+            #Heading{
+                color: rebeccapurple;
+                font-family: 'Roboto', sans-serif;
+                font-size: 2cm;
+                text-align: center;
+                position:static
+                max-width:150px;
+            }      
+            #box{
+                background-color: salmon;
+                margin:auto;
+                padding-top: 1vmin;
+                border-style: double;
+                border-color: seagreen;
+                border-width: 4mm;
+                border-radius: 1vmax;
+            }
+            #Author{
+                color:steelblue;
+                text-decoration:underline black;
+                font-family: cursive;
+                text-align: center;
+                font-size: 2em;
+                padding:top;
+                position:relative;
+                display: block;
+                
+            
+            }
+            #Purpose{
+                margin-left: 0px;
+                margin:top 0mm; 
+            }
+
+
+            .entryTitle{
+                color:chocolate;
+                font-size: 24px;
+
+            }
+
+            li {
+                color:darkgoldenrod;
+            }
+
+            #hide {
+                display:none;
+            }
+
+            #russ{
+                width:500px;
+                height:400px;
+                min-width: 100px;
+                min-height: 100px;
+            }
+
+            a:active{
+                color:red;
+            }
+
+            a:hover{
+                background-color: teal;
+            }
+
+            #taskList{
+                display:flex;
+                flex-direction: column;
+                flex-wrap:wrap;
+                justify-content: space-around;
+            }
+
+            .task{
+                background: rgb(136, 135, 194);
+                padding: 10px;
+                width: 300px;
+                height: 220x;
+                margin-top: 10px;
+                line-height: 10px;
+                font-weight: bold;
+                font-size:2em;
+                text-align: center;
+                color: black;
+            }
+
+            #graphC{
+                display:grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                background-color: cornflowerblue;
+                padding: 10px;
+            }
+
+            .graphI{
+                justify-self: center;
+                padding: 15px;
+                border:1px solid black;
+            }
+            a[href="https://www.google.com/search?q=wizards&oq=wizards&aqs=chrome..69i57j46j0i131i433l2j0i433j69i61l2j69i60.3288j1j4&sourceid=chrome&ie=UTF-8#sie=m;/g/11p3fd_8fx;3;/m/05jvx;dt;fp;1;;"]{
+                font-size: 2em;
+
+            }
+
+            h3,p{
+                color:rgb(0, 36, 112);
+                font-size: 1.2em;
+            }
+
+
+            #nbaPG li{
+                margin:2em;
+            }
+
+            div >section{
+                background-color: palegreen;
+            }
+
+            #kyrie + #russ{
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            p ~ span{
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            li.player{
+                color: red;
+            }
+
+        </style>
         <title> My Journal</title>
         <meta name="Author" content="Anudeep Alam">
         <link rel="icon" type="image/png" 
@@ -8,31 +157,38 @@
     </head>
     <body>
         <header>
-            <h1>Journal Entries</h1>
-            <p>by Anudeep Alam</p>
-            <details>
-                <summary>About the Author</summary>
-                <p>Anudeep Alam is this cringy Indian kid, is basically 
-                    99% of the time Trolling, never take him seriously!</p>
-            </details>
+            <div id="box">
+                <h1 id="Heading">Journal Entries</h1>
+                <p id="Author">Anudeep Alam</p>
+                <details>
+                    <summary>About the Author</summary>
+                    <p>Anudeep Alam is this cringy Indian kid, is basically 
+                        99% of the time Trolling, never take him seriously!</p>
+                </details>
+            </div>
         </header>
         <hr>
         <section>
+                <div id="Purpose">
+
+                
             <h2>Purpose for writing</h2>
-                <p>Hello Welcome to my Journal Entries Page. 
+                <p> Hello Welcome to my Journal Entries Page. 
                     Here I just write down my daily experiences,
                     So one day I can look back at these memories fondly.
                     Maybe my life will also be interesting to u as well! 
                     I'm just starting out so don't be too harsh on me!</p>
+                    <p id="hide">SECRET MATERIAL FOR COOL PROGRAMMERS</p>
         </section>
+                </div>
         <hr>
 
 
         <main role="main">
-            <div class="entry">
+            <div>
                 <section>
                
-                <h2>Day 3: Watching LCS Finals!!!(Sunday)</h2>
+                <h2 class="entryTitle">Day 3: Watching LCS Finals!!!(Sunday)</h2>
                     <h3>04/11/21</h3>
                     <p>
                         So firstly the day started muy muy malo. Why you 
@@ -44,10 +200,10 @@
                         this day is the best! There is actually one more bad thing I got a
                         of work to do, for the worst CSE class, <strong>CSE 101</strong>, ewwww. Here's the stuff I have to do: <br>
                         
-                        <ul>
-                            <li>Watch Lectures</li>
-                            <li>Plan out What is Due</li>
-                            <li>Do the HW</li>
+                        <ul id="taskList">
+                            <li class="task">Watch Lectures</li>
+                            <li class="task">Plan out What is Due</li>
+                            <li class="task">Do the HW</li>
                         </ul>
                         <br>
                         <br>
@@ -58,11 +214,11 @@
                 </section>
                 <section>
 
-                <h2>Day 2: The Pain of Russell Westbrook Fan(Saturday)</h2>
+                <h2 class="entryTitle">Day 2: The Pain of Russell Westbrook Fan(Saturday)</h2>
                 <h3>04/10/21</h3>
 
-                <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/Washington-Wizards-v-Orlando-Magic-5e461586c9f25039130cc3fc2331411e.jpg"
-                style="width:400px;height:300px" alt="Russel Westbrook">
+                <img id="russ" src="https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/Washington-Wizards-v-Orlando-Magic-5e461586c9f25039130cc3fc2331411e.jpg"
+                 alt="Russel Westbrook">
 
 
                 <p>
@@ -74,13 +230,13 @@
                     link</a>. U might ask why are you a westrbook fan, he's washed and blows. First thing
                     I am not a delusional Westbrook fan. If I were to be honest my ranking for point guards right now would be... 
                     <br>
-                    <ol>
-                        <li>Steph</li>
-                        <li>Dame</li>
-                        <li>CP3</li>
-                        <li>Kyrie</li>
-                        <li>Russ</li> 
-                        <li>A Bunch of Nobodies!!!!</li>
+                    <ol id="nbaPG">
+                        <li class="player">Steph</li>
+                        <li class="player">Dame</li>
+                        <li class="player">CP3</li>
+                        <li id="kyrie" class="player">Kyrie</li>
+                        <li id="russ" class="player">Russ</li> 
+                        <li class="player">A Bunch of Nobodies!!!!</li>
                     </ol>
 
                     <br>
@@ -92,6 +248,19 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dnBI_6xsovE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     <br>
+                    Cross these out mentally if uve seen these plays!
+                    <br>
+                    <div id="graphC">
+                        <div class="graphI">Westbrook Dunk on Memphis</div>
+                        <div class="graphI">Westbrook GameWinner vs Nuggets</div>
+                        <div class="graphI">Westbrook GameWinner vs Warriors </div>
+                        <div class="graphI">Westrbook FlipShot vs Lakers</div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <p>All in all Russ lowkey ints a lot while playing.</p> <span>But it's fine still my GOAT!.</span>
+                    <br>
                     <br>
                     <b>RATING:</b>1/10, just Pain.
               
@@ -100,7 +269,7 @@
             <hr>
 
             <section>
-                <h2>Day 1: Helloooooo Friday!!!! (Friday)</h2>
+                <h2 class="entryTitle">Day 1: Helloooooo Friday!!!! (Friday)</h2>
                 <h3>04/09/21</h3>
                 <p>
                     In honor of it being Friday!!!!!!. Listen to the banger song: 
