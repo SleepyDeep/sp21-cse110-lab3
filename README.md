@@ -1,1 +1,1 @@
-https://sleepypimp.github.io/Lab2/
+https://sleepypimp.github.io/sp21-cse110-lab3/
